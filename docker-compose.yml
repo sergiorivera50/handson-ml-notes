@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  jupyter-server:
+    build: .
+    image: jupyter-server
+    ports:
+      - '8888:8888'
+    volumes:
+      - ./src:/home/handson-ml-notes/src
